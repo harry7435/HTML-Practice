@@ -24,26 +24,68 @@
 
 /* 섹션 */
 .discovery {
-  width: 102rem;
+  width: 103.6rem;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10rem;
 }
 
 .discovery__headline {
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
+  margin-left: 0.8rem;
 }
 
 .discovery__title,
 .discovery__subtitle {
   margin: 0;
+  font-weight: 500;
 }
 
 .discovery__title {
+  font-size: 2.4rem;
 }
 
 .discovery__headline .divider {
+  color: var(--color-gray-600);
+  margin: 0 1rem;
 }
 
 .discovery__subtitle {
+  font-size: 1.6rem;
+  color: var(--color-gray-600);
+}
+
+/* 섹션 상품카드 링크 */
+.discovery__list {
+  list-style: none;
+  padding-left: 0;
+  overflow: hidden;
+  margin: 0.8rem 0 0 0;
+}
+
+.discovery__item {
+  float: left;
+  margin: 1.6rem 0.8rem 0;
+}
+
+.discovery__link {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-gray-500);
+  height: 31rem;
+}
+
+.cardLink--large {
+  width: 50.2rem;
+}
+
+.cardLink--small {
+  width: 24.3rem;
+}
+
+.discovery__button {
 }
