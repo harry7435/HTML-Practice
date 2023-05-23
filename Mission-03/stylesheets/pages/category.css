@@ -132,3 +132,57 @@
   font-size: 1.2rem;
   line-height: 1.2;
 }
+
+/* 캐러셀 UI */
+
+.carousel {
+  position: relative;
+  width: 32rem;
+}
+
+.carousel__controles {
+  position: absolute;
+  bottom: 2.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel__indicator {
+  border: 0;
+  padding: 0;
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: 0.8rem;
+  background-color: var(--color-gray-600);
+}
+
+.carousel__indicator:first-child {
+  margin-left: 0;
+}
+
+.carousel__indicator.is--active {
+  background-color: var(--color-gray-700);
+}
+
+.carousel__list {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: hidden;
+}
+
+.carousel__caption {
+  position: absolute;
+  bottom: 5.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel__item {
+  width: 100%;
+  display: none;
+}
+
+.carousel__item.is--active {
+  display: block;
+}
