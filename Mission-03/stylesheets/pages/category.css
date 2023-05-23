@@ -61,11 +61,13 @@
   border-color: var(--color-green-700);
 }
 
-.houseware .categoryUnit__title {
+.houseware .categoryUnit__title,
+.houseware .hashTag__link {
   color: var(--color-brown-300);
 }
 
-.kitchenware .categoryUnit__title {
+.kitchenware .categoryUnit__title,
+.kitchenware .hashTag__link {
   color: var(--color-green-700);
 }
 
@@ -94,4 +96,39 @@
   margin-bottom: 0.8rem;
   font-size: 2.4rem;
   font-weight: 500;
+}
+
+.categoryUnit__goLink {
+  color: var(--color-gray-700);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  background: url(/assets/icon/angle-right-default.svg) no-repeat 100% 50%;
+  padding-right: 1rem;
+}
+
+/* hashTag */
+.hashTag__title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.hashTag__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.hashTag__item {
+  margin-top: 1.2rem;
+}
+
+.hashTag__link {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--color-gray-400);
+  font-size: 1.2rem;
+  line-height: 1.2;
 }
