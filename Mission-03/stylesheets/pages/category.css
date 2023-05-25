@@ -71,6 +71,14 @@
   color: var(--color-green-700);
 }
 
+.houseware .carousel__caption {
+  background-color: var(--color-brown-300);
+}
+
+.kitchenware .carousel__caption {
+  background-color: var(--color-green-700);
+}
+
 .categoryUnit__group:nth-child(1) {
   flex-grow: 1;
   display: flex;
@@ -176,6 +184,22 @@
   bottom: 5.8rem;
   left: 50%;
   transform: translateX(-50%);
+  width: 26rem;
+  padding: 2rem;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.carousel__caption--large {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  display: block;
+}
+
+.carousel__caption--small {
+  font-size: 1.4rem;
+  line-height: 1.2;
 }
 
 .carousel__item {
