@@ -17,21 +17,20 @@ cart.addEventListener('mouseleave', removeEmpty);
 cart.addEventListener('focusin', addEmpty);
 cart.addEventListener('focusout', removeEmpty);
 
-
 // 함수 구현
 // focusout과 focusin이 같이 발생하면서 focusout에 의해서 화면에서 사라지면 focusin 이벤트가 발생할 요소가 없어지기 때문에 지연시간을 추가.
-function addActive(e){
+function addActive(e) {
   setTimeout(() => myCoupang.classList.add('is--active'));
 }
 
-function removeActive(e){
+function removeActive(e) {
   setTimeout(() => myCoupang.classList.remove('is--active'));
 }
 
-function addEmpty(e){
+function addEmpty(e) {
   setTimeout(() => cart.classList.add('cart--empty'));
 }
 
-function removeEmpty(e){
+function removeEmpty(e) {
   setTimeout(() => cart.classList.remove('cart--empty'));
 }
