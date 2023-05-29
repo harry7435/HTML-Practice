@@ -1,6 +1,6 @@
 /* 헤더 */
 .header {
-  /* background-color: lightyellow; */
+  background-color: lightyellow;
 }
 
 /* 로그인바 */
@@ -247,6 +247,72 @@
 /* 장바구니 영역 */
 .cart {
   grid-area: cart;
+  align-self: center;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  position: relative;
+}
+
+.cart__buttonWrapper {
+  position: relative;
+}
+
+.button--cart {
+  width: 5rem;
+  height: 6rem;
+  padding: 3rem 0 0 0;
+  background: url(/assets/icon/cart.svg) no-repeat 50% 0.5rem;
+}
+
+.cartProductCount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--color-blue-600);
+  color: var(--color-white);
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.cart__detail {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+}
+
+.cart--empty .cart__detail {
+  display: block;
+}
+
+.cart__detail::before,
+.cart__detail::after {
+  content: '';
+  position: absolute;
+}
+
+.cart__detail::before {
+  top: -0.8rem;
+  right: 1.8rem;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 8px solid var(--color-gray-500);
+}
+
+.cart__detail::after {
+  top: -0.7rem;
+  right: 1.9rem;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 8px solid var(--color-white);
+}
+
+.cart__empty {
+  white-space: nowrap;
+  padding: 3.6rem 4.6rem;
 }
 
 /* 유형별 링크 목록 */
