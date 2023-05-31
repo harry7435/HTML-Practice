@@ -1,21 +1,139 @@
 /* ---------------------------------------------- */
 /* 헤더                                            */
 /* ---------------------------------------------- */
+.header {
+  border-bottom: 1px solid var(--color-gray-100);
+}
 
+.header__inner {
+  width: 102rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 카테고리 버튼 */
+.button--category {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: var(--color-white);
+  width: 11rem;
+  height: 11.6rem;
+  background-color: var(--color-blue-600);
+  border: 0;
+  padding: 0;
+}
+
+.button--categoryText {
+  margin-top: 1.2rem;
+}
+
+/* 카테고리 버튼 키보드 초점(outline 스타일) */
+.button--category:focus {
+  outline: 0 none;
+}
+
+.button--category:focus-visible {
+  box-shadow: 0 0 0 2px var(--color-red-500);
+  border-radius: 4px;
+}
 
 /* ---------------------------------------------- */
 /* 내비게이션                                        */
 /* ---------------------------------------------- */
+.navigation {
+  width: 102rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
+.navigation__inner {
+  position: relative;
+  width: 54rem;
+  box-shadow: 0 4px 4px var(--color-opacity-20);
+}
+
+[class*='navigation__list'] {
+  list-style: none;
+  padding: 1rem 0.5rem;
+  margin: 0;
+  width: 18rem;
+  height: 100%;
+}
+
+.navigation__listDepth2,
+.navigation__listDepth3 {
+  position: absolute;
+  top: 0;
+  left: 18rem;
+}
+
+.navigation__listDepth2::before,
+.navigation__listDepth3::before {
+  content: '';
+  position: absolute;
+  width: 0.1rem;
+  height: calc(100% - 2rem);
+  box-shadow: -1px 0 2px var(--color-opacity-20);
+}
+
+.navigation__button,
+.navigation__link {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0 2rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.navigation [class^='icon-'] {
+  font-size: 2rem;
+  margin-right: 0.4rem;
+}
+
+.navigation,
+.navigation__listDepth2,
+.navigation__listDepth3 {
+  display: none;
+}
+
+.is--active.navigation,
+.is--active.navigation__listDepth2,
+.is--active.navigation__listDepth3 {
+  display: block;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  color: var(--color-blue-600);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.navigation__button.is--active,
+.navigation__button:focus {
+  color: var(--color-blue-600);
+  font-weight: 700;
+  background: url('/assets/icon/more-right-active.svg') no-repeat 100% 50%;
+}
+
+.badge--new {
+  margin-left: 0.4rem;
+}
 
 /* ---------------------------------------------- */
 /* 메인 콘텐츠                                       */
 /* ---------------------------------------------- */
 /* 메인 콘텐츠 영역의 최소 높이 설정 */
-.main{
-  min-height: 52rem;
+.main {
+  min-height: 48rem;
 }
-
 
 /* ---------------------------------------------- */
 /* 푸터                                            */
